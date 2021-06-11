@@ -1,4 +1,4 @@
-# pyconkor2021-example
+# pyconkor2021-pytest-example
 PyTest with Schema example project for PyCon Kor 2021
 
 ## Run PyTest
