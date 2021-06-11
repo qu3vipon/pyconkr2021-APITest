@@ -1,5 +1,5 @@
 # pyconkor2021-pytest-example
-PyTest with Schema example project for PyCon Kor 2021
+Example project for PyCon Kor 2021
 
 ## Run PyTest
 Clone this repo:
