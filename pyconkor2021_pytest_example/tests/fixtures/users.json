@@ -1,0 +1,56 @@
+[
+  {
+    "model": "user.user",
+    "pk": 1,
+    "fields": {
+      "password": "pbkdf2_sha256$260000$XvtTMhsh3zDYAPRApQNJ9O$CUTzw3KUmLaxFaTjNVSWrhwiyc2j+veZW4bs1ysee48=",
+      "last_login": null,
+      "is_superuser": true,
+      "username": "qu3vipon",
+      "first_name": "",
+      "last_name": "",
+      "email": "qu3vipon@gmail.com",
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2021-06-10T10:10:41.920Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "user.user",
+    "pk": 2,
+    "fields": {
+      "password": "pbkdf2_sha256$260000$XvtTMhsh3zDYAPRApQNJ9O$CUTzw3KUmLaxFaTjNVSWrhwiyc2j+veZW4bs1ysee48=",
+      "last_login": null,
+      "is_superuser": true,
+      "username": "pyconkor2021",
+      "first_name": "",
+      "last_name": "",
+      "email": "pyconkor2021@gmail.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2021-06-10T10:10:41.920Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "user.userprofile",
+    "pk": 1,
+    "fields": {
+      "user": 1,
+      "gender": "M",
+      "date_of_birth": "1992-07-13"
+    }
+  },
+  {
+    "model": "user.userprofile",
+    "pk": 2,
+    "fields": {
+      "user": 2,
+      "gender": "F",
+      "date_of_birth": null
+    }
+  }
+]

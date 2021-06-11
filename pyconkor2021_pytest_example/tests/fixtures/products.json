@@ -1,0 +1,29 @@
+[
+  {
+    "model": "shop.product",
+    "pk": 1,
+    "fields": {
+      "name": "iPhone12(2020)",
+      "price": 829,
+      "discount_rate": 4.0
+    }
+  },
+  {
+    "model": "shop.product",
+    "pk": 2,
+    "fields": {
+      "name": "iPhone12 Pro(2020)",
+      "price": 999,
+      "discount_rate": 4.5
+    }
+  },
+  {
+    "model": "shop.product",
+    "pk": 3,
+    "fields": {
+      "name": "iPhone12 Pro Max(2020)",
+      "price": 1099,
+      "discount_rate": 5.5
+    }
+  }
+]
