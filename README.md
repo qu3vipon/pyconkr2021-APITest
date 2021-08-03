@@ -1,10 +1,10 @@
-# pyconkor2021-APITest
+# pyconkr2021-APITest
 Example project for PyCon Kor 2021
 
 ## Run PyTest
 1. Clone this repo:
 ```
-git clone https://github.com/qu3vipon/pyconkor2021-APITest.git
+git clone https://github.com/qu3vipon/pyconkr2021-APITest.git
 ```
 
 2. Set Virtual Env
