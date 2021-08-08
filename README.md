@@ -1,5 +1,5 @@
 # pyconkr2021-APITest
-Example project for PyCon Kor 2021
+PyCon Kor 2021 API response test example
 
 ## Run PyTest
 1. Clone this repo:
