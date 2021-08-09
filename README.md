@@ -2,7 +2,7 @@
 PyCon Kor 2021 API response test example using PyTest & Schema
 
 ## Run PyTest
-1. Clone this repo:
+1. Clone this repository:
 ```
 git clone https://github.com/qu3vipon/pyconkr2021-APITest.git
 ```
@@ -14,7 +14,7 @@ git clone https://github.com/qu3vipon/pyconkr2021-APITest.git
 pip install -r requirements.txt
 ```
 
-4. And change into the main directory:
+4. Go into the main directory:
 ```
 cd pyconkor2021_pytest_example
 ```
