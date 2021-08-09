@@ -7,7 +7,7 @@ PyCon Kor 2021 API response test example using PyTest & Schema
 git clone https://github.com/qu3vipon/pyconkr2021-APITest.git
 ```
 
-2. Set Virtual Env
+2. Set Virtual Environment
 
 3. Install requirements:
 ```
