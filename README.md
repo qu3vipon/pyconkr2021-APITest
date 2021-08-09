@@ -8,6 +8,7 @@ git clone https://github.com/qu3vipon/pyconkr2021-APITest.git
 ```
 
 2. Set Virtual Environment
+> Python 3.8+
 
 3. Install requirements:
 ```
