@@ -19,7 +19,7 @@ class TestUser:
         'password': 'pyconkor2021',
     }
 
-    invalid_user_credentails = {
+    invalid_user_credentials = {
         'username': 'something',
         'password': 'wrong',
     }
@@ -50,6 +50,7 @@ class TestUser:
         assert response.data['profile']['gender'] == 'M'
         assert response.data['profile']['gender'] in UserProfile.Gender
         assert response.data['profile']['date_of_birth'] == '1992-07-13'
+        assert response.data['profile']['date_of_birth'] < str(UserProfile.MIN_DATE_OF_BIRTH)
 
 
 # With Schema

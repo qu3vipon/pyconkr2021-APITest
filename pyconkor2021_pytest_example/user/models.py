@@ -8,7 +8,7 @@ class User(AbstractUser):
 
 
 class UserProfile(models.Model):
-    MIN_DATE_OF_BIRTH = str(timezone.localdate())
+    MIN_DATE_OF_BIRTH = timezone.localdate()
 
     class Gender(models.TextChoices):
         MALE = 'M', 'Male'

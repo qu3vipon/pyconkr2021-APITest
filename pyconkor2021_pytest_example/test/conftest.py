@@ -1,27 +1,22 @@
 import os
 
-import django
 import pytest
 from django.contrib.auth import get_user_model
 from django.core.management import call_command
 from rest_framework.test import APIClient
 
-from pyconkor2021_pytest_example.settings import BASE_DIR
+from pyconkor2021_pytest_example.settings.base import BASE_DIR
 
 User = get_user_model()
-
-
-def pytest_configure():
-    django.setup()
 
 
 @pytest.fixture(scope='session')
 def django_db_setup(django_db_setup, django_db_blocker):
     with django_db_blocker.unblock():
-        dir_path = os.path.join(BASE_DIR, f'tests/fixtures')
+        dir_path = os.path.join(BASE_DIR, f'test/fixtures')
         files = os.listdir(dir_path)
         for file in files:
-            call_command("loaddata", f"tests/fixtures/{file}")
+            call_command("loaddata", f"test/fixtures/{file}")
 
 
 @pytest.fixture
@@ -30,7 +25,6 @@ def force_login():
         client = APIClient()
         client.force_login(user)
         return client
-
     return _force_login
 
 
