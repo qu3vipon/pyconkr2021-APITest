@@ -5,7 +5,7 @@ from django.contrib.auth import get_user_model
 from django.core.management import call_command
 from rest_framework.test import APIClient
 
-from pyconkor2021_pytest_example.settings.base import BASE_DIR
+from pyconkor2021_pytest_example.settings import BASE_DIR
 
 User = get_user_model()
 
