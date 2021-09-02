@@ -13,10 +13,10 @@ User = get_user_model()
 @pytest.fixture(scope='session')
 def django_db_setup(django_db_setup, django_db_blocker):
     with django_db_blocker.unblock():
-        dir_path = os.path.join(BASE_DIR, f'test/fixtures')
+        dir_path = os.path.join(BASE_DIR, f'tests/fixtures')
         files = os.listdir(dir_path)
         for file in files:
-            call_command("loaddata", f"test/fixtures/{file}")
+            call_command("loaddata", f"tests/fixtures/{file}")
 
 
 @pytest.fixture

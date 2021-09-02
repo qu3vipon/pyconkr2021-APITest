@@ -10,8 +10,7 @@ User = get_user_model()
 UserProfile = apps.get_model('user', 'UserProfile')
 
 
-# Original
-
+# Normal Test
 @pytest.mark.django_db
 class TestUser:
     user_credentials = {
@@ -54,7 +53,6 @@ class TestUser:
 
 
 # With Schema
-
 @pytest.mark.django_db
 class TestUserWithSchema:
     user_credentials = {
