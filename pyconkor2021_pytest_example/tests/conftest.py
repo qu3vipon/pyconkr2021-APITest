@@ -4,9 +4,9 @@ import pytest
 from django.contrib.auth import get_user_model
 from django.core.management import call_command
 from rest_framework.test import APIClient
+from user.models import UserProfile
 
 from pyconkor2021_pytest_example.settings import BASE_DIR
-from user.models import UserProfile
 
 User = get_user_model()
 
@@ -37,14 +37,8 @@ def user_one():
 
 @pytest.fixture(autouse=True)
 def user_two():
-    user = User.objects.create(
-        username="pyconkor2021",
-        email="pyconkor2021@gmail.com"
-    )
+    user = User.objects.create(username="pyconkor2021", email="pyconkor2021@gmail.com")
     user.set_password("pyconkor2021")
     user.save()
-    UserProfile.objects.create(
-        user=user,
-        gender="F"
-    )
+    UserProfile.objects.create(user=user, gender="F")
     yield user
