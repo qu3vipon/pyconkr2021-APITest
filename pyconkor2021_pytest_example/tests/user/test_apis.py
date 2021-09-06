@@ -37,6 +37,14 @@ class TestUser:
         assert response.data['user']['email'] == 'qu3vipon@gmail.com'
         assert response.data['user']['is_staff'] is True
 
+    def test_user_login_fail(self):
+        client = APIClient()
+        url = resolve_url('auth_login')
+        response = client.post(url, self.invalid_user_credentials)
+
+        assert response.status_code == status.HTTP_400_BAD_REQUEST
+        assert response.json()['non_field_errors'] == ['Unable to log in with provided credentials.']
+
     def test_user_profile(self, force_login, user_one):
         client = force_login(user_one)
         url = resolve_url('user_self_profile')
@@ -60,7 +68,7 @@ class TestUserWithSchema:
         'password': 'pyconkor2021',
     }
 
-    invalid_user_credentails = {
+    invalid_user_credentials = {
         'username': 'something',
         'password': 'wrong',
     }
@@ -100,6 +108,8 @@ class TestUserWithSchema:
         }
         response = client.post(url, user_credentials)
 
+        print(response.json())
+
         schema = Schema({
             'access_token': And(str, len),
             'refresh_token': And(str, len),
@@ -114,7 +124,7 @@ class TestUserWithSchema:
         assert schema.is_valid(response.json())
 
     @pytest.mark.parametrize(
-        'user, username, email, is_staff, gender',
+        "user, username, email, is_staff, gender",
         [
             (pytest.lazy_fixture('user_one'), 'qu3vipon', 'qu3vipon@gmail.com', True, 'M'),
             (pytest.lazy_fixture('user_two'), 'pyconkor2021', 'pyconkor2021@gmail.com', False, 'F'),
