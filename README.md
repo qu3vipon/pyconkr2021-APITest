@@ -1,9 +1,4 @@
 # pyconkr2021-APITest
-PyCon Kor 2021 API Response Test Example
-
-<br>
-
-## Description
 
 "API Response 효율적으로 테스트하기" 발표 예시 프로젝트입니다. 
 
