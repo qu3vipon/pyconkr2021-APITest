@@ -7,7 +7,7 @@ PyCon Kor 2021 API Response Test Example
 
 "API Response 효율적으로 테스트하기" 발표 예시 프로젝트입니다. 
 
-Schema와 Lazy_fixture 사용법을 글로 정리한 내용은 링크를 통해 확인하실 수 있습니다. [👉 Link](https://www.qu3vipon.com/32c46e43-1bab-4be0-8fdc-1e67c0b12dc9#b0e4ac60-8816-4153-b60f-783d10925f85)
+[Schema](https://github.com/keleshev/schema)와 [pytest-lazy-fixture](https://github.com/TvoroG/pytest-lazy-fixture) 사용법을 글로 정리한 내용은 링크를 통해 확인하실 수 있습니다. [👉 Link](https://www.qu3vipon.com/32c46e43-1bab-4be0-8fdc-1e67c0b12dc9#b0e4ac60-8816-4153-b60f-783d10925f85)
 
 <br>
 
