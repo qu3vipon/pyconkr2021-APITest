@@ -21,7 +21,7 @@ git clone https://github.com/qu3vipon/pyconkr2021-APITest.git
 
 <br>
 
-Run PyTest
+Run PyTest:
 ```
 docker-compose up --build --exit-code-from app
 ```
